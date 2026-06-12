@@ -19,7 +19,14 @@ directorio-padre/
 └── grpc-contracts/
 ```
 
-### 2. Ejecución del Servicio
+### 2. Configuración (MinIO)
+Este servicio **no usa base de datos relacional**; almacena archivos en MinIO (S3). Copia las variables de entorno:
+
+```bash
+cp .env.example .env
+```
+
+### 3. Ejecución del Servicio
 Instala las dependencias y corre el servidor en modo desarrollo (corre en el puerto gRPC `50053`):
 
 ```bash
